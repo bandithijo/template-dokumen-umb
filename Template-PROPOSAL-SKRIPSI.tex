@@ -10,6 +10,7 @@
   tmargin=40mm,
   bmargin=30mm
 }
+\usepackage{rotating}
 
 % Pengaturan jarak antar baris
 \usepackage{setspace}
@@ -62,9 +63,7 @@
 \usepackage{color, colortbl}
 \definecolor{Gray}{gray}{0.7}
 \usepackage{array}
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{x}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 % Pengaturan bab dan subbab
 \renewcommand{\chaptername}{BAB}
@@ -266,9 +265,31 @@ Bagian ini juga memuat penegasan posisi penelitian yang dilakukan oleh mahasiswa
 
 Selain itu, bagian ini berisi justifikasi atau kritik pada kelemahan atau kekurangan yang mungkin ada pada penelitian terdahulu sehingga dapat dijadikan argumen bahwa penelitian yang akan dilakukan bersifat penyempurnaan atau pengembangan penelitian terdahulu. Sumber pustaka yang dirujuk pada bagian ini harus dicantumkan dalam kalimat atau pernyataan yang diacu dan dicantumkan dalam daftar pustaka.
 
+\clearpage
+\begin{sidewaystable}
+\vspace{-2.5cm}
 \section{Keaslian Penelitian}
-Struktur Organisasi, berisikan berisikan struktur organisasi mulai dari direktur utama, kepala divisi, sampai sub bagian yang terendah, uraian dan susunan tugas dalam struktur organisasi perusahaan.
 
+\noindent\begin{minipage}{\textwidth}
+  \label{tabel:2_2}
+  \captionof{table}{\bfseries{Matriks Literatur Review dan Posisi Penelitian}}
+  \centering\bfseries{\JudulProposal}\\
+  \vspace{0.5cm}
+  \setstretch{1.0}
+  \setlength\extrarowheight{2pt}
+  \begin{tabular}{|c|p{3.0cm}|p{2.5cm}|p{3.0cm}|p{3.0cm}|p{4.0cm}|p{4.5cm}|}
+    \hline
+    \cellcolor{Gray}\textbf{No.} & \multicolumn{1}{m{3.0cm}|}{\cellcolor{Gray}\centering\textbf{Judul}} & \multicolumn{1}{m{2.5cm}|}{\cellcolor{Gray}\centering\textbf{Peneliti, Media Publikasi, dan Tahun}} & \multicolumn{1}{m{3.0cm}|}{\cellcolor{Gray}\centering\textbf{Tujuan Penelitian}} & \multicolumn{1}{m{3.0cm}|}{\cellcolor{Gray}\centering\textbf{Kesimpulan}} & \multicolumn{1}{m{4.0cm}|}{\cellcolor{Gray}\centering\textbf{Saran atau Kelemahan}} & \multicolumn{1}{m{4.5cm}|}{\cellcolor{Gray}\centering\textbf{Perbandingan}}\\
+    \hline
+    1. & Judul Penelitian & \raggedright Nama peneliti, media publikasi, tahun penelitian & \raggedright Apa tujuan penelitian tersebut? & \raggedright Apa kesimpulan penelitian tersebut? Kesimpulan harus menjawab rumusan masalah & \raggedright Apa saran penelitian selanjutnya, atau apa kelemahan utama pada penelitian tersebut? & \raggedright Perbedaan antara hasil penelitian sebelumnya dengan penelitian yang akan dilakukan, diantaranya berkaitan dengan metode yang digunakan, inovasi, serta kompleksitas permasalahan yang diajukan sehingga perbedaan tidak sekedar pada objek penelitian.\tabularnewline
+    \hline
+    2. & Minimal 5 Penelitian terbaru & & & & & \\
+    \hline
+  \end{tabular}
+\end{minipage}
+\end{sidewaystable}
+
+\clearpage
 \section{Teori-Teori yang Digunakan}
 Bagian ini memuat rangkuman teori-teori yang diambil dari buku atau literatur yang mendukung penelitian, serta memuat penjelasan tentang konsep dan prinsip dasar yang diperlukan untuk pemecahan permasalahan. Landasan teori dapat berbentuk uraian kualitatif, model matematis, atau tools yang langsung berkaitan dengan permasalahan yang diteliti. Sumber teori yang dirujuk pada bagian ini harus dicantumkan dalam kalimat atau pernyataan yang diacu dan dicantumkan dalam Daftar Pustaka.
 
