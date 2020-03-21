@@ -64,6 +64,7 @@
 \definecolor{Gray}{gray}{0.7}
 \usepackage{array}
 \newcolumntype{x}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{multirow}
 
 % Pengaturan bab dan subbab
 \renewcommand{\chaptername}{BAB}
@@ -82,6 +83,8 @@
   {\normalsize\bfseries}{\thesubsection}{12pt}{}
 \titleformat{\subsubsection}
   {\normalsize\bfseries}{\thesubsubsection}{12pt}{}
+\titleformat{\paragraph}
+  {\normalsize\bfseries}{\theparagraph}{12pt}{}
 \usepackage{indentfirst}
 \setlength{\parindent}{25pt}
 
@@ -307,20 +310,86 @@ Judul ini merupakan bagian dari sub judul 2.3.2 dari sub judul Landasan Teori...
 \begin{center}
   \begin{minipage}{\textwidth}
     \label{gambar:2.1}
-    \includegraphics[width=14.5cm]{gambar/gambar_2_1.png}
-    \vspace{-0.5cm}
+    \includegraphics[width=13.5cm]{gambar/gambar_2.1.png}
+    \vspace{0.5cm}
     \captionof{figure}{\bfseries{Judul Gambar Posisi di Bawah Gambar Cetak Tebal}}
   \end{minipage}
 \end{center}
 
+\clearpage
 \subsubsection{Judul Sub 2.3.2.1 Landasan Teori}
 Judul ini merupakan bagian dari sub judul 2.3.2.1 dari sub judul Landasan Teori...
 
-\paragraph{Judul Sub 2.3.2.1.1 Teori-Teori yang Digunakan}
+\vspace{0.5cm}
+
+\noindent\begin{minipage}{\textwidth}
+  \label{tabel:2_2}
+  \captionof{table}{\bfseries{Judul Tabel 2.2 Posisi di Atas Tabel Rata Tengah Cetak Tebal}}
+  \setstretch{1.0}
+  \normalfont
+  \setlength\extrarowheight{2pt}
+  \vspace{0.5cm}
+  \hspace{1.1cm}
+  \begin{tabular}{|c|l|c|}
+    \hline
+    \rowcolor{Gray}
+    Source & \multicolumn{1}{c|}{\cellcolor{Gray}Metrics} & OO Construct \\ \hline
+    & Cyclomatic Complexity (CC) &  \\ \cline{2-2}
+    & Lines Of Code (LOC) &  \\ \cline{2-2}
+    \multirow{-3}{*}{Traditional Metrics} & Comment Percentage (CP) & \multirow{-3}{*}{Method} \\ \hline
+    & \begin{tabular}[c]{@{}l@{}}Weighted Method Per Class\\ (WMC)\end{tabular} & Class/Method \\ \cline{2-3}
+    & Response For Class (RFC) & Class/Message \\ \cline{2-3}
+    & \begin{tabular}[c]{@{}l@{}}Lack of Cohesion Of Methods\\ (LCOM)\end{tabular} & Class/Cohesion \\ \cline{2-3}
+    & \begin{tabular}[c]{@{}l@{}}Coupling Between Objects\\ (CBO)\end{tabular} & Coupling \\ \cline{2-3}
+    & \begin{tabular}[c]{@{}l@{}}Depth of Inheritance Tree\\ (DIT)\end{tabular} & Inheritance \\ \cline{2-3}
+    \multirow{-6}{*}{New Object Oriented} & Number Of Children (NOC) & Inheritance \\ \hline
+  \end{tabular}
+\end{minipage}
+
+\vspace{0.5cm}
+
+\paragraph{\normalfont\bfseries{Judul Sub 2.3.2.1.1 Teori-Teori yang Digunakan}}
 Judul ini merupakan bagian dari sub judul 2.2.2.1.1 dari sub judul Landasan Teori...
 
 \subsection{Judul Sub 2.3.3 Teori-Teori yang Digunakan}
 Judul ini merupakan bagian dari sub judul 2.3.3 dari sub judul Landasan Teori...
+
+\vspace{0.5cm}
+
+\begin{center}
+  \begin{minipage}{\textwidth}
+    \label{gambar:2.2}
+    \hspace{1.8cm}
+    \includegraphics[width=10.5cm]{gambar/gambar_2.2.png}
+    \vspace{0.5cm}
+    \captionof{figure}{\bfseries{Judul Gambar 2 Posisi di Bawah Gambar Cetak Tebal Tanpa Titik}}
+  \end{minipage}
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent\begin{minipage}{\textwidth}
+  \label{tabel:2_3}
+  \captionof{table}{\bfseries{Judul Tabel 2.3 Posisi di Atas Tabel Rata Tengah Cetak Tebal Tanpa Titik}}
+  \setstretch{1.0}
+  \normalfont
+  \setlength\extrarowheight{2pt}
+  \vspace{0.5cm}
+  \hspace{-0.2cm}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    \rowcolor{Gray}
+    \multicolumn{1}{|c|}{\cellcolor{Gray}} & \multicolumn{2}{c|}{\cellcolor{Gray}\textbf{Parameter Metrik}} \\ \cline{2-3}
+    \rowcolor{Gray}
+    \multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor{Gray}\textbf{Faktor-faktor Kualitas Software}}} & \multicolumn{1}{c|}{\cellcolor{Gray}\textbf{Traditional Metrics}} & \multicolumn{1}{c|}{\cellcolor{Gray}\textbf{CK Metrics Suite}} \\ \hline
+    \textit{efficiency} & - & LCOM,CBO,DIT,NOC \\ \hline
+    \textit{complexity} & CC & - \\ \hline
+    \textit{understandability} & CP,LOC & WMC,RFC,DIT \\ \hline
+    \textit{reusability} & CP,LOC & WMC,LCOM,CBO,DIT,NOC \\ \hline
+    \textit{maintainability/testability} & CP,LOC & WMC,RFC,DIT,NOC \\ \hline
+  \end{tabular}
+\end{minipage}
+
 
 % Halaman: BAB III
 \chapter{METODOLOGI PENELITIAN}
