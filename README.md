@@ -1,5 +1,17 @@
 # Kumpulan Template Laporan KP, Proposal, Skripsi - Program Studi Informatika S1 - Fakultas Ilmu Komputer - Universitas Mulia Balikpapan (Unofficial) (LaTeX version)
 
+**Daftar isi**
+- [Project Apa Ini?](#project-apa-ini-)
+- [Apakah proyek ini resmi dari kampus?](#apakah-proyek-ini-resmi-dari-kampus-)
+- [Apa tujuan proyek ini dibuat?](#apa-tujuan-proyek-ini-dibuat-)
+- [Seperti apa proses menulis dokumen pada template yang dibuat menggunakan LaTeX?](#seperti-apa-proses-menulis-dokumen-pada-template-yang-dibuat-menggunakan-latex-)
+- [Apakah harus menggunakan FreeBSD / GNU/Linux?](#apakah-harus-menggunakan-freebsd---gnu-linux-)
+- [Bagaimana proses membuat bagan atau menambahkan gambar?](#bagaimana-proses-membuat-bagan-atau-menambahkan-gambar-)
+- [Bagaimana proses membuat tabel?](#bagaimana-proses-membuat-tabel-)
+- [Saya ingin ikut berkontribusi, bagaimana caranya?](#saya-ingin-ikut-berkontribusi--bagaimana-caranya-)
+
+<br>
+
 ## Project Apa Ini?
 
 Ini adalah kumpulan template untuk membuat dokumen akademik, baik **Laporan Kerja Praktek**, **Proposal Skripsi**, dan **Skripsi**.
