@@ -1,14 +1,15 @@
 # Kumpulan Template Laporan KP, Proposal, Skripsi - Program Studi Informatika S1 - Fakultas Ilmu Komputer - Universitas Mulia Balikpapan (Unofficial) (LaTeX version)
 
 **Daftar isi**
-- [Project Apa Ini?](#project-apa-ini-)
-- [Apakah proyek ini resmi dari kampus?](#apakah-proyek-ini-resmi-dari-kampus-)
-- [Apa tujuan proyek ini dibuat?](#apa-tujuan-proyek-ini-dibuat-)
-- [Seperti apa proses menulis dokumen pada template yang dibuat menggunakan LaTeX?](#seperti-apa-proses-menulis-dokumen-pada-template-yang-dibuat-menggunakan-latex-)
-- [Apakah harus menggunakan FreeBSD / GNU/Linux?](#apakah-harus-menggunakan-freebsd---gnu-linux-)
-- [Bagaimana proses membuat bagan atau menambahkan gambar?](#bagaimana-proses-membuat-bagan-atau-menambahkan-gambar-)
-- [Bagaimana proses membuat tabel?](#bagaimana-proses-membuat-tabel-)
-- [Saya ingin ikut berkontribusi, bagaimana caranya?](#saya-ingin-ikut-berkontribusi--bagaimana-caranya-)
+- [Project Apa Ini?](#project-apa-ini)
+- [Apakah proyek ini resmi dari kampus?](#apakah-proyek-ini-resmi-dari-kampus)
+- [Apa tujuan proyek ini dibuat?](#apa-tujuan-proyek-ini-dibuat)
+- [Seperti apa proses menulis dokumen pada template yang dibuat menggunakan LaTeX?](#seperti-apa-proses-menulis-dokumen-pada-template-yang-dibuat-menggunakan-latex)
+- [Apakah harus menggunakan FreeBSD / GNU/Linux?](#apakah-harus-menggunakan-freebsd--gnu-linux)
+- [Bagaimana proses membuat bagan atau menambahkan gambar?](#bagaimana-proses-membuat-bagan-atau-menambahkan-gambar)
+- [Bagaimana proses membuat tabel?](#bagaimana-proses-membuat-tabel)
+- [Apakah bisa membuat expresi matematika dengan LaTeX?](#apakah-bisa-membuat-expresi-matematika-dengan-latex)
+- [Saya ingin ikut berkontribusi, bagaimana caranya?](#saya-ingin-ikut-berkontribusi--bagaimana-caranya)
 
 <br>
 
@@ -103,6 +104,31 @@ Lalu tinggal digunakan pada `document` seperti ini.
 ```
 
 ![gambar5](.src/gambar_05.png)
+
+## Apakah bisa membuat expresi matematika dengan LaTeX?
+
+Tentu bisa. Bahkan sangat mudah.
+
+```tex
+
+% satu baris equation dengan $...$
+$ Mi = \prod_{j=1}^n bij,i=1,2,...,n $
+
+% multiline equation dengan block equation
+\begin{equation}
+  \overline{W}i = \sqrt[n]{Mi}
+\end{equation}
+
+\begin{equation}
+  Wi = \overline{W}i / \Sigma_{j=1}^n \overline{W}i,i = 1,2,...,n
+\end{equation}
+
+\begin{equation}
+  \lambda maks = \Sigma_{i=1}^n \Sigma_{j=1}^n bijWj
+\end{equation}
+```
+
+![gambar6](.src/gambar_06.png)
 
 ## Saya ingin ikut berkontribusi, bagaimana caranya?
 
