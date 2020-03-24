@@ -66,12 +66,16 @@
 \newcolumntype{x}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{multirow}
 
+% Pengaturan: rumus matematika
+\usepackage{amsmath}
+
 % Pengaturan bab dan subbab
 \renewcommand{\chaptername}{BAB}
 \renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
@@ -389,6 +393,31 @@ Judul ini merupakan bagian dari sub judul 2.3.3 dari sub judul Landasan Teori...
     \textit{maintainability/testability} & CP,LOC & WMC,RFC,DIT,NOC \\ \hline
   \end{tabular}
 \end{minipage}
+
+\vspace{0.5cm}
+
+\noindent Contoh penulisan Rumus Matematika :
+
+\begin{equation}
+Mi = \prod_{j=1}^n bij,i=1,2,...,n
+\end{equation}
+
+\begin{enumerate}
+\item Menghitung n akar pangkat dari \textit{Mi}
+  \begin{equation}
+  \overline{W}i = \sqrt[n]{Mi}
+  \end{equation}
+
+\item Melakukan normalisasi terhadap $ \overline{W}i $
+  \begin{equation}
+  Wi = \overline{W}i / \Sigma_{j=1}^n \overline{W}i,i = 1,2,...,n
+  \end{equation}
+
+\item Mencari Lamda maksimal adalah :
+  \begin{equation}
+  \lambda maks = \Sigma_{i=1}^n \Sigma_{j=1}^n bijWj
+  \end{equation}
+\end{enumerate}
 
 % Halaman: BAB III
 \chapter{METODOLOGI PENELITIAN}
